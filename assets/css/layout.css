@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.sidebar h3 {
+  margin-top: 24px;
+  font-size: 15px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 6px 8px;
+  margin: 4px 0;
+  text-decoration: none;
+  color: #333;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+  background: #0d6efd;
+  color: white;
+}
+
+.content {
+  flex: 1;
+  padding: 32px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
